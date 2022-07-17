@@ -1,19 +1,9 @@
-
+from sqlalchemy import *
 import yaml
 from yaml.loader import SafeLoader
 from kafka import KafkaConsumer
 from json import loads
 from time import sleep
-from sqlalchemy import *
-import logging
-
-logging.basicConfig(filename="consumer.log", 
-					format='%(asctime)s %(message)s', 
-					filemode='w') 
-
-logger=logging.getLogger() 
-
-logger.setLevel(logging.DEBUG)
 
 
 consumer = KafkaConsumer(
@@ -31,15 +21,33 @@ def init_db(db_creds):
     db=None
     db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_creds['db_user'], db_creds['db_pass'], db_creds['db_host'], db_creds['db_port'], db_creds['db_name'])
     try:
-        db = create_engine(db_string)
+        db = sqlalchemy.create_engine(db_string)
     except:
-        logger.error("[DB CONNECT ERR]")
+        print("[DB CONNECT ERR]")
     finally:
         return db
 
+#insert user's data
+def insert_into_users_table(tweet_json, db):
+    user_dict= {
+        'user_id': str(tweet_json['user']['id_str']),
+        'user_name': str(tweet_json['user']['name']).replace("'",''),
+        'user_url': str(tweet_json['user']['url']),
+    }
+    query = '''INSERT INTO users (user_id, user_name, user_url) 
+    VALUES (
+        '{user_id}',
+        '{user_name}',
+        '{user_url}'
+    );'''.format(**user_dict)
+    try:
+        print("user inserted")
+        db.execute(sqlalchemy.text(query))
+    except:
+        pass
 
 #insert tweet's data
-def insert_data(tweet_json, tweets, users):
+def insert_into_tweets_table(tweet_json, db):
     tweet_dict = {'tweet_id': str(tweet_json['id_str']),
     'created_at': tweet_json['created_at'],
     'tweet_text': str(tweet_json['text']).replace("'",'').replace("%(D)",''),
@@ -52,36 +60,34 @@ def insert_data(tweet_json, tweets, users):
         'user_id': str(tweet_json['user']['id_str']),
         'user_name': str(tweet_json['user']['name']),
         'user_url': str(tweet_json['user']['url']),}
-
-    tweet_ingest = tweets.insert()
-    
-    try:
-        tweet_ingest.execute(tweet_dict)
-        logger.info("Tweet id:"+tweet_dict['tweet_id']+ " inserted")
-    except Exception as e:
-        logger.error('[ERROR] INGESTION ERROR '+str(e))
-    
-    user_ingest = users.insert()
-    
-    try:
-        user_ingest.execute(tweet_dict)
-        logger.info("user id:"+user_dict['user_id']+ " inserted")
-    except Exception as e:
-        logger.error('[ERROR] INGESTION ERROR '+ str(e))
+        
 
         
         
         
+    query = '''INSERT INTO tweets (tweet_id, created_at, tweet_text, tweet_language,favorite_count,  retweet_count, user_id) 
+    VALUES (
+        '{tweet_id}',
+        timestamp '{created_at}',
+        '{tweet_text}',
+        '{tweet_language}',
+        {favorite_count},
+        {retweet_count},
+        '{user_id}'
+    );'''.format(**tweet_dict)
+    try:
+        print("Tweet inserted")
+        db.execute(sqlalchemy.text(query))
+    except:
+        pass
+
     
 if __name__ == '__main__':
     print('application started')
 
-    try:
-        with open('db_creds.yaml') as db_file:
-            db_creds_dict = yaml.load(db_file, Loader=SafeLoader)
-    except:
-        logger.error("db_creds.yaml file not found")
-
+    with open('db_creds.yaml') as f:
+        db_creds_dict = yaml.load(f, Loader=SafeLoader)
+    
     db = init_db(db_creds_dict)
 
     metadata = MetaData(db)
@@ -106,7 +112,6 @@ if __name__ == '__main__':
 
     for event in consumer:
         event_data = event.value
-
-        # insert the data into the relevant tables
-        insert_data(event_data, tweets, users)
-        
+        # Do whatever you want
+        insert_into_tweets_table(event_data, db)
+        insert_into_users_table(event_data, db)

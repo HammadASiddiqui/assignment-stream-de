@@ -5,15 +5,6 @@ from yaml.loader import SafeLoader
 from time import sleep
 from json import dumps
 from kafka import KafkaProducer
-import logging
-
-logging.basicConfig(filename="producer.log", 
-					format='%(asctime)s %(message)s', 
-					filemode='w') 
-
-logger=logging.getLogger() 
-
-logger.setLevel(logging.DEBUG)
 
 producer = KafkaProducer(
     bootstrap_servers=['localhost:9092'],
@@ -23,18 +14,14 @@ producer = KafkaProducer(
 #process tweets from pagenated data
 def process_page(page_results):
     for i, tweet in enumerate(page_results):
-        logger.info("Sending>>>>>>>>>>>>>>>tweet#"+str(i))
+        print("Sending>>>>>>>>>>>>>>>tweet#"+str(i))
         producer.send('tweets_topic', value= tweet._json)
         
 if __name__ == '__main__':
     print('application started')
-
-    try:
-        with open('api_auth.yaml') as api_auth_file:
-            keys = yaml.load(api_auth_file, Loader=SafeLoader)
-    except:
-        logger.error("api_auth.yaml not found")
-
+    with open('api_auth.yaml') as f:
+        keys = yaml.load(f, Loader=SafeLoader)
+    
     OAUTH_KEYS = {'consumer_key': keys['consumer_key'], 'consumer_secret': keys['consumer_secret'],
                   'access_token_key': keys['access_token_key'], 'access_token_secret': keys['access_token_secret']}
     auth = tweepy.OAuthHandler(
