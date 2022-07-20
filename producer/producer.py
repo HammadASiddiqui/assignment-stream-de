@@ -5,6 +5,7 @@ from yaml.loader import SafeLoader
 from time import sleep
 from json import dumps
 from kafka import KafkaProducer
+import logging
 
 producer = KafkaProducer(
     bootstrap_servers=['localhost:9092'],
