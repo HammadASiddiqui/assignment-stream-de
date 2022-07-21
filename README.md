@@ -39,6 +39,21 @@ For this approach the following components are required:
 3. Then the consumer extracts the event data from kafka topic and after transforming the data ingests the relevant detials in the PostgresDB's Tables. 
 4. This completes the ETL.
 
+### How to query the DB for viewing ETL results
+
+Execute the following commands on the terminal
+
+```docker container ps```
+view the DB containers CONTAINER ID and copy it 
+
+```docker exec -it <copied CONTAINER ID> bash  ```
+this will route your terminal to the postgres DB instance
+
+```psql postgres://username:secret@localhost:5432/database```
+this command will connect to your Database
+
+## Design Diagram
+
 Please find attached the design diagram for the solution.
 
 ![stream_de](https://user-images.githubusercontent.com/15999137/180238986-802bd022-2c64-4f74-b7fc-50e22b86c0e7.jpeg)
