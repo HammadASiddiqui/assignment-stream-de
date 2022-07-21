@@ -1,0 +1,667 @@
+2022-07-21 22:23:18,473 Added sensor with name connections-closed
+2022-07-21 22:23:18,473 Added sensor with name connections-created
+2022-07-21 22:23:18,473 Added sensor with name select-time
+2022-07-21 22:23:18,473 Added sensor with name io-time
+2022-07-21 22:23:18,473 Initiating connection to node bootstrap-0 at localhost:9092
+2022-07-21 22:23:18,473 Added sensor with name bytes-sent-received
+2022-07-21 22:23:18,473 Added sensor with name bytes-sent
+2022-07-21 22:23:18,473 Added sensor with name bytes-received
+2022-07-21 22:23:18,474 Added sensor with name request-latency
+2022-07-21 22:23:18,474 Added sensor with name node-bootstrap-0.bytes-sent
+2022-07-21 22:23:18,474 Added sensor with name node-bootstrap-0.bytes-received
+2022-07-21 22:23:18,474 Added sensor with name node-bootstrap-0.latency
+2022-07-21 22:23:18,476 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <disconnected> [unspecified None]>: creating new socket
+2022-07-21 22:23:18,476 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <disconnected> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+2022-07-21 22:23:18,476 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2022-07-21 22:23:18,477 Probing node bootstrap-0 broker version
+2022-07-21 22:23:18,477 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+2022-07-21 22:23:18,477 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2022-07-21 22:23:18,477 Node bootstrap-0 connected
+2022-07-21 22:23:18,477 Sending request ApiVersionRequest_v0()
+2022-07-21 22:23:18,477 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 1: ApiVersionRequest_v0()
+2022-07-21 22:23:18,578 Sending request MetadataRequest_v0(topics=[])
+2022-07-21 22:23:18,578 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 2: MetadataRequest_v0(topics=[])
+2022-07-21 22:23:18,578 Received correlation id: 1
+2022-07-21 22:23:18,578 Processing response ApiVersionResponse_v0
+2022-07-21 22:23:18,579 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 1 (101.66406631469727 ms): ApiVersionResponse_v0(error_code=0, api_versions=[(api_key=0, min_version=0, max_version=9), (api_key=1, min_version=0, max_version=12), (api_key=2, min_version=0, max_version=6), (api_key=3, min_version=0, max_version=11), (api_key=4, min_version=0, max_version=5), (api_key=5, min_version=0, max_version=3), (api_key=6, min_version=0, max_version=7), (api_key=7, min_version=0, max_version=3), (api_key=8, min_version=0, max_version=8), (api_key=9, min_version=0, max_version=7), (api_key=10, min_version=0, max_version=3), (api_key=11, min_version=0, max_version=7), (api_key=12, min_version=0, max_version=4), (api_key=13, min_version=0, max_version=4), (api_key=14, min_version=0, max_version=5), (api_key=15, min_version=0, max_version=5), (api_key=16, min_version=0, max_version=4), (api_key=17, min_version=0, max_version=1), (api_key=18, min_version=0, max_version=3), (api_key=19, min_version=0, max_version=7), (api_key=20, min_version=0, max_version=6), (api_key=21, min_version=0, max_version=2), (api_key=22, min_version=0, max_version=4), (api_key=23, min_version=0, max_version=4), (api_key=24, min_version=0, max_version=3), (api_key=25, min_version=0, max_version=3), (api_key=26, min_version=0, max_version=3), (api_key=27, min_version=0, max_version=1), (api_key=28, min_version=0, max_version=3), (api_key=29, min_version=0, max_version=2), (api_key=30, min_version=0, max_version=2), (api_key=31, min_version=0, max_version=2), (api_key=32, min_version=0, max_version=4), (api_key=33, min_version=0, max_version=2), (api_key=34, min_version=0, max_version=2), (api_key=35, min_version=0, max_version=2), (api_key=36, min_version=0, max_version=2), (api_key=37, min_version=0, max_version=3), (api_key=38, min_version=0, max_version=2), (api_key=39, min_version=0, max_version=2), (api_key=40, min_version=0, max_version=2), (api_key=41, min_version=0, max_version=2), (api_key=42, min_version=0, max_version=2), (api_key=43, min_version=0, max_version=2), (api_key=44, min_version=0, max_version=1), (api_key=45, min_version=0, max_version=0), (api_key=46, min_version=0, max_version=0), (api_key=47, min_version=0, max_version=0), (api_key=48, min_version=0, max_version=1), (api_key=49, min_version=0, max_version=1), (api_key=50, min_version=0, max_version=0), (api_key=51, min_version=0, max_version=0), (api_key=56, min_version=0, max_version=0), (api_key=57, min_version=0, max_version=0), (api_key=60, min_version=0, max_version=0), (api_key=61, min_version=0, max_version=0)])
+2022-07-21 22:23:18,604 Received correlation id: 2
+2022-07-21 22:23:18,604 Processing response MetadataResponse_v0
+2022-07-21 22:23:18,605 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 2 (26.69978141784668 ms): MetadataResponse_v0(brokers=[(node_id=1001, host='localhost', port=9092)], topics=[(error_code=0, topic='topic_test', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='tweets_topic', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])]), (error_code=0, topic='__consumer_offsets', partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=10, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=20, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=40, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=30, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=9, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=11, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=31, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=39, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=13, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=18, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=22, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=8, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=32, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=43, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=29, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=34, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=1, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=6, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=41, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=27, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=48, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=5, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=15, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=35, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=25, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=46, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=26, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=36, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=44, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=16, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=37, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=17, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=45, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=3, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=24, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=38, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=33, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=23, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=28, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=2, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=12, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=19, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=14, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=4, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=47, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=49, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=42, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=7, leader=1001, replicas=[1001], isr=[1001]), (error_code=0, partition=21, leader=1001, replicas=[1001], isr=[1001])])])
+2022-07-21 22:23:18,605 Broker version identified as 2.5.0
+2022-07-21 22:23:18,605 Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2022-07-21 22:23:18,605 Added sensor with name bytes-fetched
+2022-07-21 22:23:18,606 Added sensor with name records-fetched
+2022-07-21 22:23:18,606 Added sensor with name fetch-latency
+2022-07-21 22:23:18,606 Added sensor with name records-lag
+2022-07-21 22:23:18,606 Added sensor with name fetch-throttle-time
+2022-07-21 22:23:18,606 Added sensor with name heartbeat-latency
+2022-07-21 22:23:18,606 Added sensor with name join-latency
+2022-07-21 22:23:18,606 Added sensor with name sync-latency
+2022-07-21 22:23:18,606 Added sensor with name commit-latency
+2022-07-21 22:23:18,606 Updating subscribed topics to: ('tweets_topic',)
+2022-07-21 22:23:18,635 Sending group coordinator request for group my-group-id to broker bootstrap-0
+2022-07-21 22:23:18,635 Sending request GroupCoordinatorRequest_v0(consumer_group='my-group-id')
+2022-07-21 22:23:18,635 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 3: GroupCoordinatorRequest_v0(consumer_group='my-group-id')
+2022-07-21 22:23:18,635 Sending metadata request MetadataRequest_v1(topics=['tweets_topic']) to node bootstrap-0
+2022-07-21 22:23:18,635 Sending request MetadataRequest_v1(topics=['tweets_topic'])
+2022-07-21 22:23:18,635 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 4: MetadataRequest_v1(topics=['tweets_topic'])
+2022-07-21 22:23:18,646 Received correlation id: 3
+2022-07-21 22:23:18,646 Processing response GroupCoordinatorResponse_v0
+2022-07-21 22:23:18,646 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 3 (11.268854141235352 ms): GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='localhost', port=9092)
+2022-07-21 22:23:18,646 Received group coordinator response GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='localhost', port=9092)
+2022-07-21 22:23:18,647 Updating coordinator for my-group-id: GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='localhost', port=9092)
+2022-07-21 22:23:18,647 Group coordinator for my-group-id is BrokerMetadata(nodeId='coordinator-1001', host='localhost', port=9092, rack=None)
+2022-07-21 22:23:18,647 Discovered coordinator coordinator-1001 for group my-group-id
+2022-07-21 22:23:18,647 Starting new heartbeat thread
+2022-07-21 22:23:18,647 Heartbeat thread started
+2022-07-21 22:23:18,647 Revoking previously assigned partitions set() for group my-group-id
+2022-07-21 22:23:18,647 Initiating connection to node coordinator-1001 at localhost:9092
+2022-07-21 22:23:18,647 Added sensor with name node-coordinator-1001.bytes-sent
+2022-07-21 22:23:18,647 Added sensor with name node-coordinator-1001.bytes-received
+2022-07-21 22:23:18,647 Added sensor with name node-coordinator-1001.latency
+2022-07-21 22:23:18,648 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <disconnected> [unspecified None]>: creating new socket
+2022-07-21 22:23:18,648 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <disconnected> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+2022-07-21 22:23:18,648 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2022-07-21 22:23:18,648 Received correlation id: 4
+2022-07-21 22:23:18,648 Processing response MetadataResponse_v1
+2022-07-21 22:23:18,648 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 4 (12.591838836669922 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='localhost', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='tweets_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])])])
+2022-07-21 22:23:18,648 Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 1)
+2022-07-21 22:23:18,753 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+2022-07-21 22:23:18,753 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2022-07-21 22:23:18,753 Node coordinator-1001 connected
+2022-07-21 22:23:18,753 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2022-07-21 22:23:18,859 (Re-)joining group my-group-id
+2022-07-21 22:23:18,860 Sending JoinGroup (JoinGroupRequest_v2(group='my-group-id', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00')])) to coordinator coordinator-1001
+2022-07-21 22:23:18,860 Sending request JoinGroupRequest_v2(group='my-group-id', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00')])
+2022-07-21 22:23:18,861 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 1: JoinGroupRequest_v2(group='my-group-id', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00')])
+2022-07-21 22:23:18,931 Received correlation id: 1
+2022-07-21 22:23:18,931 Processing response JoinGroupResponse_v2
+2022-07-21 22:23:18,931 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 1 (69.91386413574219 ms): JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=3, group_protocol='range', leader_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', members=[(member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00')])
+2022-07-21 22:23:18,931 Received successful JoinGroup response for group my-group-id: JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=3, group_protocol='range', leader_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', members=[(member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x00')])
+2022-07-21 22:23:18,931 Elected group leader -- performing partition assignments using range
+2022-07-21 22:23:18,931 Performing assignment for group my-group-id using strategy range with subscriptions {'kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0': ConsumerProtocolMemberMetadata(version=0, subscription=['tweets_topic'], user_data=b'')}
+2022-07-21 22:23:18,931 Finished assignment for group my-group-id: {'kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0': ConsumerProtocolMemberAssignment(version=0, assignment=[(topic='tweets_topic', partitions=[0])], user_data=b'')}
+2022-07-21 22:23:18,931 Sending leader SyncGroup for group my-group-id to coordinator coordinator-1001: SyncGroupRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', group_assignment=[(member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2022-07-21 22:23:18,931 Sending request SyncGroupRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', group_assignment=[(member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2022-07-21 22:23:18,931 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 2: SyncGroupRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', group_assignment=[(member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2022-07-21 22:23:18,931 Initializing connection to node 1001 for metadata request
+2022-07-21 22:23:18,932 Initiating connection to node 1001 at localhost:9092
+2022-07-21 22:23:18,932 Added sensor with name node-1001.bytes-sent
+2022-07-21 22:23:18,932 Added sensor with name node-1001.bytes-received
+2022-07-21 22:23:18,932 Added sensor with name node-1001.latency
+2022-07-21 22:23:18,932 <BrokerConnection node_id=1001 host=localhost:9092 <disconnected> [unspecified None]>: creating new socket
+2022-07-21 22:23:18,932 <BrokerConnection node_id=1001 host=localhost:9092 <disconnected> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+2022-07-21 22:23:18,932 <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2022-07-21 22:23:18,933 <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+2022-07-21 22:23:18,933 <BrokerConnection node_id=1001 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2022-07-21 22:23:18,933 Node 1001 connected
+2022-07-21 22:23:18,933 Sending metadata request MetadataRequest_v1(topics=['tweets_topic']) to node 1001
+2022-07-21 22:23:18,933 Sending request MetadataRequest_v1(topics=['tweets_topic'])
+2022-07-21 22:23:18,933 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 1: MetadataRequest_v1(topics=['tweets_topic'])
+2022-07-21 22:23:18,936 Received correlation id: 1
+2022-07-21 22:23:18,936 Processing response MetadataResponse_v1
+2022-07-21 22:23:18,936 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 1 (3.103017807006836 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='localhost', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='tweets_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])])])
+2022-07-21 22:23:18,936 Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 1)
+2022-07-21 22:23:18,944 Received correlation id: 2
+2022-07-21 22:23:18,944 Processing response SyncGroupResponse_v1
+2022-07-21 22:23:18,944 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 2 (12.815713882446289 ms): SyncGroupResponse_v1(throttle_time_ms=0, error_code=0, member_assignment=b'\x00\x00\x00\x00\x00\x01\x00\x0ctweets_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')
+2022-07-21 22:23:18,944 Successfully joined group my-group-id with generation 3
+2022-07-21 22:23:18,945 Updated partition assignment: [TopicPartition(topic='tweets_topic', partition=0)]
+2022-07-21 22:23:18,945 Setting newly assigned partitions {TopicPartition(topic='tweets_topic', partition=0)} for group my-group-id
+2022-07-21 22:23:18,945 Group my-group-id fetching committed offsets for partitions: {TopicPartition(topic='tweets_topic', partition=0)}
+2022-07-21 22:23:18,945 Sending request OffsetFetchRequest_v1(consumer_group='my-group-id', topics=[(topic='tweets_topic', partitions=[0])])
+2022-07-21 22:23:18,945 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 3: OffsetFetchRequest_v1(consumer_group='my-group-id', topics=[(topic='tweets_topic', partitions=[0])])
+2022-07-21 22:23:18,951 Received correlation id: 3
+2022-07-21 22:23:18,951 Processing response OffsetFetchResponse_v1
+2022-07-21 22:23:18,951 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 3 (5.508184432983398 ms): OffsetFetchResponse_v1(topics=[(topic='tweets_topic', partitions=[(partition=0, offset=100, metadata='', error_code=0)])])
+2022-07-21 22:23:18,951 Resetting offset for partition TopicPartition(topic='tweets_topic', partition=0) to the committed offset 100
+2022-07-21 22:23:18,951 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 100
+2022-07-21 22:23:18,951 Sending FetchRequest to node 1001
+2022-07-21 22:23:18,951 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=100, max_bytes=1048576)])])
+2022-07-21 22:23:18,952 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 2: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=100, max_bytes=1048576)])])
+2022-07-21 22:23:18,980 Received correlation id: 2
+2022-07-21 22:23:18,980 Processing response FetchResponse_v4
+2022-07-21 22:23:18,981 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 2 (28.783798217773438 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00d\x00\x005\n\x00\x00\x00\x00\x02\xcf\xca{\x98\x00\x00\x00\x00\x00\x02\x00\x00\x01\x82!\xc8\xb9\xe7\x00\x00\x01\x82!\xc8\xb9\xe8\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x03\xec*\x00\x00\x00\x01\xde*{"created_at": "Thu Jul 21 17:2...')])])
+2022-07-21 22:23:18,981 Adding fetched record for partition TopicPartition(topic='tweets_topic', partition=0) with offset 100 to buffered record list
+2022-07-21 22:23:18,991 Added sensor with name topic.tweets_topic.bytes-fetched
+2022-07-21 22:23:18,991 Added sensor with name topic.tweets_topic.records-fetched
+2022-07-21 22:23:19,069 Tweet id:1550169341970198528 inserted
+2022-07-21 22:23:19,072 user id:1506299540286341126 inserted
+2022-07-21 22:23:19,075 Tweet id:1550169309477052417 inserted
+2022-07-21 22:23:19,078 user id:725196602734845952 inserted
+2022-07-21 22:23:19,080 Tweet id:1550169297963470848 inserted
+2022-07-21 22:23:19,082 user id:1889011345 inserted
+2022-07-21 22:23:19,085 Tweet id:1550169047416901633 inserted
+2022-07-21 22:23:19,087 user id:927231076648484864 inserted
+2022-07-21 22:23:19,090 Tweet id:1550168716549140481 inserted
+2022-07-21 22:23:19,093 user id:451292765 inserted
+2022-07-21 22:23:19,095 Tweet id:1550168687503556609 inserted
+2022-07-21 22:23:19,098 user id:1415543632996704256 inserted
+2022-07-21 22:23:19,100 Tweet id:1550168572755939329 inserted
+2022-07-21 22:23:19,103 user id:1497145218835091456 inserted
+2022-07-21 22:23:19,105 Tweet id:1550168470758760449 inserted
+2022-07-21 22:23:19,107 user id:9597552 inserted
+2022-07-21 22:23:19,110 Tweet id:1550168460411502594 inserted
+2022-07-21 22:23:19,112 [ERROR] INGESTION ERROR (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (user_id)=(1497145218835091456) already exists.
+
+[SQL: INSERT INTO users (user_id) VALUES (%(user_id)s)]
+[parameters: {'user_id': '1497145218835091456'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2022-07-21 22:23:19,115 Tweet id:1550168391092211713 inserted
+2022-07-21 22:23:19,117 user id:1255766027624951808 inserted
+2022-07-21 22:23:19,120 Tweet id:1550168390752473091 inserted
+2022-07-21 22:23:19,122 user id:1550074004932812802 inserted
+2022-07-21 22:23:19,124 Tweet id:1550168314047078402 inserted
+2022-07-21 22:23:19,126 user id:1003212943566176261 inserted
+2022-07-21 22:23:19,128 Tweet id:1550168309127069696 inserted
+2022-07-21 22:23:19,130 user id:1457384195853111312 inserted
+2022-07-21 22:23:19,132 Tweet id:1550168024765931529 inserted
+2022-07-21 22:23:19,134 user id:2374486146 inserted
+2022-07-21 22:23:19,137 Tweet id:1550167952195993600 inserted
+2022-07-21 22:23:19,139 user id:196217104 inserted
+2022-07-21 22:23:19,141 Tweet id:1550167942478065664 inserted
+2022-07-21 22:23:19,144 user id:1389790038 inserted
+2022-07-21 22:23:19,147 Tweet id:1550167931404812290 inserted
+2022-07-21 22:23:19,149 user id:1267723774763454464 inserted
+2022-07-21 22:23:19,153 Tweet id:1550167809237426176 inserted
+2022-07-21 22:23:19,155 user id:1359363965126598659 inserted
+2022-07-21 22:23:19,157 Tweet id:1550167769341116420 inserted
+2022-07-21 22:23:19,160 user id:1549646462996422657 inserted
+2022-07-21 22:23:19,162 Tweet id:1550167741298274304 inserted
+2022-07-21 22:23:19,164 user id:1462815084959338497 inserted
+2022-07-21 22:23:19,166 Tweet id:1550167078732124161 inserted
+2022-07-21 22:23:19,168 user id:136499584 inserted
+2022-07-21 22:23:19,170 Tweet id:1550166925421985794 inserted
+2022-07-21 22:23:19,172 user id:1146770528373547008 inserted
+2022-07-21 22:23:19,174 Tweet id:1550166882338148354 inserted
+2022-07-21 22:23:19,176 user id:1064251096435167232 inserted
+2022-07-21 22:23:19,178 Tweet id:1550166740541521920 inserted
+2022-07-21 22:23:19,180 user id:800932290972950528 inserted
+2022-07-21 22:23:19,182 Tweet id:1550166642616807424 inserted
+2022-07-21 22:23:19,185 user id:2853383077 inserted
+2022-07-21 22:23:19,187 Tweet id:1550166630218739712 inserted
+2022-07-21 22:23:19,190 user id:1343872914823770113 inserted
+2022-07-21 22:23:19,193 Tweet id:1550166425263902725 inserted
+2022-07-21 22:23:19,195 user id:1495110601374371845 inserted
+2022-07-21 22:23:19,198 Tweet id:1550166411871338497 inserted
+2022-07-21 22:23:19,200 user id:1310936835422662665 inserted
+2022-07-21 22:23:19,202 Tweet id:1550166238130733057 inserted
+2022-07-21 22:23:19,204 user id:1258049227453800454 inserted
+2022-07-21 22:23:19,206 Tweet id:1550165982295085059 inserted
+2022-07-21 22:23:19,209 user id:1053319896405286918 inserted
+2022-07-21 22:23:19,212 Tweet id:1550165748072464385 inserted
+2022-07-21 22:23:19,214 user id:1498047654135308297 inserted
+2022-07-21 22:23:19,217 Tweet id:1550165597085962240 inserted
+2022-07-21 22:23:19,219 user id:17801282 inserted
+2022-07-21 22:23:19,221 Tweet id:1550165576500355073 inserted
+2022-07-21 22:23:19,224 user id:884804602947829760 inserted
+2022-07-21 22:23:19,226 Tweet id:1550165439338070016 inserted
+2022-07-21 22:23:19,228 user id:67276156 inserted
+2022-07-21 22:23:19,230 Tweet id:1550165239026573316 inserted
+2022-07-21 22:23:19,232 user id:1338000596 inserted
+2022-07-21 22:23:19,234 Tweet id:1550165211465801728 inserted
+2022-07-21 22:23:19,236 user id:1060490347 inserted
+2022-07-21 22:23:19,239 Tweet id:1550165211453218816 inserted
+2022-07-21 22:23:19,241 user id:307391233 inserted
+2022-07-21 22:23:19,243 Tweet id:1550165078141726720 inserted
+2022-07-21 22:23:19,245 user id:1526948184010162176 inserted
+2022-07-21 22:23:19,247 Tweet id:1550164992510525444 inserted
+2022-07-21 22:23:19,249 [ERROR] INGESTION ERROR (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (user_id)=(307391233) already exists.
+
+[SQL: INSERT INTO users (user_id) VALUES (%(user_id)s)]
+[parameters: {'user_id': '307391233'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2022-07-21 22:23:19,252 Tweet id:1550164900739256320 inserted
+2022-07-21 22:23:19,254 user id:1062357328916348931 inserted
+2022-07-21 22:23:19,256 Tweet id:1550164726042300417 inserted
+2022-07-21 22:23:19,258 user id:1521601677429817345 inserted
+2022-07-21 22:23:19,261 Tweet id:1550164610258554880 inserted
+2022-07-21 22:23:19,263 user id:1550162536212865024 inserted
+2022-07-21 22:23:19,265 Tweet id:1550164486753067010 inserted
+2022-07-21 22:23:19,268 user id:800420755062210560 inserted
+2022-07-21 22:23:19,270 Tweet id:1550164455547457536 inserted
+2022-07-21 22:23:19,271 user id:1442117304 inserted
+2022-07-21 22:23:19,273 Tweet id:1550164270616383488 inserted
+2022-07-21 22:23:19,275 user id:1290783156258381824 inserted
+2022-07-21 22:23:19,277 Tweet id:1550164125808033792 inserted
+2022-07-21 22:23:19,279 user id:1257491554245246976 inserted
+2022-07-21 22:23:19,281 Tweet id:1550163905556762625 inserted
+2022-07-21 22:23:19,283 user id:1343212349344395264 inserted
+2022-07-21 22:23:19,286 Tweet id:1550163613066878977 inserted
+2022-07-21 22:23:19,288 user id:1518893728206831617 inserted
+2022-07-21 22:23:19,291 Tweet id:1550163547463770113 inserted
+2022-07-21 22:23:19,293 user id:144126313 inserted
+2022-07-21 22:23:19,295 Tweet id:1550163475611193347 inserted
+2022-07-21 22:23:19,297 [ERROR] INGESTION ERROR (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (user_id)=(1145074250900017152) already exists.
+
+[SQL: INSERT INTO users (user_id) VALUES (%(user_id)s)]
+[parameters: {'user_id': '1145074250900017152'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2022-07-21 22:23:19,300 Tweet id:1550163402848276480 inserted
+2022-07-21 22:23:19,302 user id:942534514940743682 inserted
+2022-07-21 22:23:19,305 Tweet id:1550163229111980033 inserted
+2022-07-21 22:23:19,307 user id:1518994661771288579 inserted
+2022-07-21 22:23:19,327 Tweet id:1550163205019865088 inserted
+2022-07-21 22:23:19,331 [ERROR] INGESTION ERROR (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (user_id)=(1518994661771288579) already exists.
+
+[SQL: INSERT INTO users (user_id) VALUES (%(user_id)s)]
+[parameters: {'user_id': '1518994661771288579'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2022-07-21 22:23:19,334 Tweet id:1550162916233691136 inserted
+2022-07-21 22:23:19,336 user id:209225563 inserted
+2022-07-21 22:23:19,339 Tweet id:1550162857538600963 inserted
+2022-07-21 22:23:19,341 user id:1520841399356305408 inserted
+2022-07-21 22:23:19,343 Tweet id:1550162692505096192 inserted
+2022-07-21 22:23:19,346 user id:1522770562430480385 inserted
+2022-07-21 22:23:19,349 Tweet id:1550162084431859713 inserted
+2022-07-21 22:23:19,351 user id:820187383 inserted
+2022-07-21 22:23:19,354 Tweet id:1550161993314729984 inserted
+2022-07-21 22:23:19,356 user id:2879728768 inserted
+2022-07-21 22:23:19,359 Tweet id:1550161869050187780 inserted
+2022-07-21 22:23:19,361 user id:379425553 inserted
+2022-07-21 22:23:19,364 Tweet id:1550161841371979776 inserted
+2022-07-21 22:23:19,366 user id:1544356003214393344 inserted
+2022-07-21 22:23:19,369 Tweet id:1550161721968697344 inserted
+2022-07-21 22:23:19,371 user id:3259595766 inserted
+2022-07-21 22:23:19,374 Tweet id:1550161675688484873 inserted
+2022-07-21 22:23:19,376 user id:1238571894875570178 inserted
+2022-07-21 22:23:19,379 Tweet id:1550161652951154688 inserted
+2022-07-21 22:23:19,381 user id:1488194880690176003 inserted
+2022-07-21 22:23:19,383 Tweet id:1550161606608408576 inserted
+2022-07-21 22:23:19,386 user id:170941515 inserted
+2022-07-21 22:23:19,387 Tweet id:1550161542628491266 inserted
+2022-07-21 22:23:19,389 user id:1498600128852246530 inserted
+2022-07-21 22:23:19,391 Tweet id:1550161495627120646 inserted
+2022-07-21 22:23:19,393 user id:1392229117945425923 inserted
+2022-07-21 22:23:19,395 Tweet id:1550161426580492290 inserted
+2022-07-21 22:23:19,398 [ERROR] INGESTION ERROR (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (user_id)=(1549871872489168899) already exists.
+
+[SQL: INSERT INTO users (user_id) VALUES (%(user_id)s)]
+[parameters: {'user_id': '1549871872489168899'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2022-07-21 22:23:19,401 Tweet id:1550161217834172418 inserted
+2022-07-21 22:23:19,415 user id:16303669 inserted
+2022-07-21 22:23:19,418 Tweet id:1550161097096716288 inserted
+2022-07-21 22:23:19,420 user id:64269958 inserted
+2022-07-21 22:23:19,425 Tweet id:1550161038149947394 inserted
+2022-07-21 22:23:19,427 user id:284995285 inserted
+2022-07-21 22:23:19,429 Tweet id:1550161017837084672 inserted
+2022-07-21 22:23:19,431 user id:3400032074 inserted
+2022-07-21 22:23:19,433 Tweet id:1550160971133382656 inserted
+2022-07-21 22:23:19,435 user id:2414099257 inserted
+2022-07-21 22:23:19,436 Tweet id:1550160725062066176 inserted
+2022-07-21 22:23:19,438 user id:214079080 inserted
+2022-07-21 22:23:19,440 Tweet id:1550160686365523975 inserted
+2022-07-21 22:23:19,443 user id:1302287186365120515 inserted
+2022-07-21 22:23:19,444 Tweet id:1550160573756633088 inserted
+2022-07-21 22:23:19,446 user id:1348143636031029253 inserted
+2022-07-21 22:23:19,449 Tweet id:1550160559013765122 inserted
+2022-07-21 22:23:19,450 user id:1446505817667145730 inserted
+2022-07-21 22:23:19,453 Tweet id:1550160542408609794 inserted
+2022-07-21 22:23:19,455 user id:520170927 inserted
+2022-07-21 22:23:19,458 Tweet id:1550160502055108616 inserted
+2022-07-21 22:23:19,460 user id:1086010400431312897 inserted
+2022-07-21 22:23:19,462 Tweet id:1550160461823447040 inserted
+2022-07-21 22:23:19,464 user id:1227322386275540995 inserted
+2022-07-21 22:23:19,467 Tweet id:1550160072063565825 inserted
+2022-07-21 22:23:19,469 user id:243342696 inserted
+2022-07-21 22:23:19,471 Tweet id:1550159867041783808 inserted
+2022-07-21 22:23:19,474 user id:1320856224808751104 inserted
+2022-07-21 22:23:19,476 Tweet id:1550159834313539586 inserted
+2022-07-21 22:23:19,479 user id:1257712088031559682 inserted
+2022-07-21 22:23:19,481 Tweet id:1550159766152007680 inserted
+2022-07-21 22:23:19,483 user id:1043057540 inserted
+2022-07-21 22:23:19,485 Tweet id:1550159643619516423 inserted
+2022-07-21 22:23:19,490 user id:2512668410 inserted
+2022-07-21 22:23:19,492 Tweet id:1550159466015952896 inserted
+2022-07-21 22:23:19,494 user id:1497913989266825219 inserted
+2022-07-21 22:23:19,496 Tweet id:1550159318598778881 inserted
+2022-07-21 22:23:19,499 user id:409116367 inserted
+2022-07-21 22:23:19,501 Tweet id:1550159249845747712 inserted
+2022-07-21 22:23:19,503 user id:1331280760477786117 inserted
+2022-07-21 22:23:19,505 Tweet id:1550158953191018498 inserted
+2022-07-21 22:23:19,508 user id:498715314 inserted
+2022-07-21 22:23:19,510 Tweet id:1550158949881626624 inserted
+2022-07-21 22:23:19,512 user id:1550157250538250240 inserted
+2022-07-21 22:23:19,514 Tweet id:1550158886816337921 inserted
+2022-07-21 22:23:19,516 user id:1471526800035823617 inserted
+2022-07-21 22:23:19,519 Tweet id:1550158753923727360 inserted
+2022-07-21 22:23:19,521 user id:2721606997 inserted
+2022-07-21 22:23:19,524 Tweet id:1550158484943126534 inserted
+2022-07-21 22:23:19,526 user id:1341149750305943554 inserted
+2022-07-21 22:23:19,528 Tweet id:1550158302717280257 inserted
+2022-07-21 22:23:19,530 user id:4913658792 inserted
+2022-07-21 22:23:19,532 Tweet id:1550158198010572800 inserted
+2022-07-21 22:23:19,535 user id:1040421599042691072 inserted
+2022-07-21 22:23:19,537 Tweet id:1550157987020423168 inserted
+2022-07-21 22:23:19,539 user id:1060283310079967257 inserted
+2022-07-21 22:23:19,542 Tweet id:1550157888546656260 inserted
+2022-07-21 22:23:19,544 user id:1364018496309518339 inserted
+2022-07-21 22:23:19,546 Tweet id:1550157708451401728 inserted
+2022-07-21 22:23:19,548 user id:961777478468382721 inserted
+2022-07-21 22:23:19,550 Tweet id:1550157652893880322 inserted
+2022-07-21 22:23:19,552 user id:1402682275305828352 inserted
+2022-07-21 22:23:19,554 Tweet id:1550157591254167553 inserted
+2022-07-21 22:23:19,557 user id:1280778163518181376 inserted
+2022-07-21 22:23:19,559 Tweet id:1550157519032664064 inserted
+2022-07-21 22:23:19,561 user id:1548666811389968384 inserted
+2022-07-21 22:23:19,562 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:19,562 Sending FetchRequest to node 1001
+2022-07-21 22:23:19,562 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:19,562 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 3: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:20,073 Received correlation id: 3
+2022-07-21 22:23:20,073 Processing response FetchResponse_v4
+2022-07-21 22:23:20,073 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 3 (511.08694076538086 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:20,074 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:20,074 Sending FetchRequest to node 1001
+2022-07-21 22:23:20,074 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:20,074 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 4: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:20,593 Received correlation id: 4
+2022-07-21 22:23:20,593 Processing response FetchResponse_v4
+2022-07-21 22:23:20,593 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 4 (518.9430713653564 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:20,594 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:20,594 Sending FetchRequest to node 1001
+2022-07-21 22:23:20,594 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:20,594 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 5: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:21,115 Received correlation id: 5
+2022-07-21 22:23:21,116 Processing response FetchResponse_v4
+2022-07-21 22:23:21,116 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 5 (521.8091011047363 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:21,117 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:21,117 Sending FetchRequest to node 1001
+2022-07-21 22:23:21,117 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:21,117 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 6: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:21,633 Received correlation id: 6
+2022-07-21 22:23:21,634 Processing response FetchResponse_v4
+2022-07-21 22:23:21,634 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 6 (516.9250965118408 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:21,634 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:21,634 Sending FetchRequest to node 1001
+2022-07-21 22:23:21,634 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:21,634 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 7: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:21,952 Heartbeat: my-group-id[3] kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0
+2022-07-21 22:23:21,952 Sending request HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:21,953 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 4: HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:21,972 Received correlation id: 4
+2022-07-21 22:23:21,972 Processing response HeartbeatResponse_v1
+2022-07-21 22:23:21,972 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 4 (19.052982330322266 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2022-07-21 22:23:21,972 Received successful heartbeat response for group my-group-id
+2022-07-21 22:23:22,149 Received correlation id: 7
+2022-07-21 22:23:22,149 Processing response FetchResponse_v4
+2022-07-21 22:23:22,149 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 7 (514.746904373169 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:22,150 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:22,150 Sending FetchRequest to node 1001
+2022-07-21 22:23:22,150 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:22,150 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 8: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:22,666 Received correlation id: 8
+2022-07-21 22:23:22,666 Processing response FetchResponse_v4
+2022-07-21 22:23:22,666 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 8 (516.5038108825684 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:22,667 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:22,667 Sending FetchRequest to node 1001
+2022-07-21 22:23:22,667 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:22,667 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 9: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:23,188 Received correlation id: 9
+2022-07-21 22:23:23,188 Processing response FetchResponse_v4
+2022-07-21 22:23:23,189 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 9 (522.5100517272949 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:23,190 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:23,190 Sending FetchRequest to node 1001
+2022-07-21 22:23:23,190 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:23,190 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 10: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:23,702 Received correlation id: 10
+2022-07-21 22:23:23,702 Processing response FetchResponse_v4
+2022-07-21 22:23:23,702 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 10 (511.7919445037842 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:23,703 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:23,703 Sending FetchRequest to node 1001
+2022-07-21 22:23:23,703 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:23,703 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 11: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:23,946 Sending offset-commit request with {TopicPartition(topic='tweets_topic', partition=0): OffsetAndMetadata(offset=200, metadata='')} for group my-group-id to coordinator-1001
+2022-07-21 22:23:23,946 Sending request OffsetCommitRequest_v2(consumer_group='my-group-id', consumer_group_generation_id=3, consumer_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', retention_time=-1, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, metadata='')])])
+2022-07-21 22:23:23,946 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 5: OffsetCommitRequest_v2(consumer_group='my-group-id', consumer_group_generation_id=3, consumer_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', retention_time=-1, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, metadata='')])])
+2022-07-21 22:23:23,971 Received correlation id: 5
+2022-07-21 22:23:23,971 Processing response OffsetCommitResponse_v2
+2022-07-21 22:23:23,971 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 5 (24.750232696533203 ms): OffsetCommitResponse_v2(topics=[(topic='tweets_topic', partitions=[(partition=0, error_code=0)])])
+2022-07-21 22:23:23,971 Group my-group-id committed offset OffsetAndMetadata(offset=200, metadata='') for partition TopicPartition(topic='tweets_topic', partition=0)
+2022-07-21 22:23:23,971 Completed autocommit of offsets {TopicPartition(topic='tweets_topic', partition=0): OffsetAndMetadata(offset=200, metadata='')} for group my-group-id
+2022-07-21 22:23:24,217 Received correlation id: 11
+2022-07-21 22:23:24,217 Processing response FetchResponse_v4
+2022-07-21 22:23:24,217 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 11 (514.4248008728027 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:24,218 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:24,218 Sending FetchRequest to node 1001
+2022-07-21 22:23:24,218 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:24,218 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 12: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:24,730 Received correlation id: 12
+2022-07-21 22:23:24,730 Processing response FetchResponse_v4
+2022-07-21 22:23:24,730 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 12 (512.3810768127441 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:24,731 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:24,731 Sending FetchRequest to node 1001
+2022-07-21 22:23:24,731 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:24,731 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 13: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:24,953 Heartbeat: my-group-id[3] kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0
+2022-07-21 22:23:24,953 Sending request HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:24,953 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 6: HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:24,960 Received correlation id: 6
+2022-07-21 22:23:24,960 Processing response HeartbeatResponse_v1
+2022-07-21 22:23:24,960 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 6 (7.27391242980957 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2022-07-21 22:23:24,960 Received successful heartbeat response for group my-group-id
+2022-07-21 22:23:25,242 Received correlation id: 13
+2022-07-21 22:23:25,242 Processing response FetchResponse_v4
+2022-07-21 22:23:25,242 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 13 (510.99491119384766 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:25,242 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:25,242 Sending FetchRequest to node 1001
+2022-07-21 22:23:25,242 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:25,242 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 14: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:25,769 Received correlation id: 14
+2022-07-21 22:23:25,769 Processing response FetchResponse_v4
+2022-07-21 22:23:25,769 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 14 (527.0440578460693 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:25,770 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:25,770 Sending FetchRequest to node 1001
+2022-07-21 22:23:25,770 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:25,770 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 15: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:26,279 Received correlation id: 15
+2022-07-21 22:23:26,279 Processing response FetchResponse_v4
+2022-07-21 22:23:26,280 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 15 (509.6931457519531 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:26,280 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:26,280 Sending FetchRequest to node 1001
+2022-07-21 22:23:26,280 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:26,280 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 16: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:26,793 Received correlation id: 16
+2022-07-21 22:23:26,793 Processing response FetchResponse_v4
+2022-07-21 22:23:26,793 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 16 (513.1161212921143 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:26,794 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:26,794 Sending FetchRequest to node 1001
+2022-07-21 22:23:26,794 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:26,794 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 17: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:27,319 Received correlation id: 17
+2022-07-21 22:23:27,319 Processing response FetchResponse_v4
+2022-07-21 22:23:27,320 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 17 (525.5911350250244 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:27,320 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:27,320 Sending FetchRequest to node 1001
+2022-07-21 22:23:27,320 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:27,320 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 18: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:27,830 Received correlation id: 18
+2022-07-21 22:23:27,830 Processing response FetchResponse_v4
+2022-07-21 22:23:27,830 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 18 (510.3628635406494 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:27,831 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:27,831 Sending FetchRequest to node 1001
+2022-07-21 22:23:27,831 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:27,831 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 19: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:27,954 Heartbeat: my-group-id[3] kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0
+2022-07-21 22:23:27,954 Sending request HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:27,954 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 7: HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:27,971 Received correlation id: 7
+2022-07-21 22:23:27,971 Processing response HeartbeatResponse_v1
+2022-07-21 22:23:27,971 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 7 (16.95704460144043 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2022-07-21 22:23:27,971 Received successful heartbeat response for group my-group-id
+2022-07-21 22:23:28,345 Received correlation id: 19
+2022-07-21 22:23:28,345 Processing response FetchResponse_v4
+2022-07-21 22:23:28,345 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 19 (514.4500732421875 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:28,345 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:28,345 Sending FetchRequest to node 1001
+2022-07-21 22:23:28,346 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:28,346 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 20: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:28,863 Received correlation id: 20
+2022-07-21 22:23:28,864 Processing response FetchResponse_v4
+2022-07-21 22:23:28,864 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 20 (518.6660289764404 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:28,866 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:28,866 Sending FetchRequest to node 1001
+2022-07-21 22:23:28,866 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:28,866 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 21: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:28,948 Sending offset-commit request with {TopicPartition(topic='tweets_topic', partition=0): OffsetAndMetadata(offset=200, metadata='')} for group my-group-id to coordinator-1001
+2022-07-21 22:23:28,948 Sending request OffsetCommitRequest_v2(consumer_group='my-group-id', consumer_group_generation_id=3, consumer_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', retention_time=-1, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, metadata='')])])
+2022-07-21 22:23:28,949 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 8: OffsetCommitRequest_v2(consumer_group='my-group-id', consumer_group_generation_id=3, consumer_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', retention_time=-1, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, metadata='')])])
+2022-07-21 22:23:28,966 Received correlation id: 8
+2022-07-21 22:23:28,966 Processing response OffsetCommitResponse_v2
+2022-07-21 22:23:28,967 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 8 (17.685890197753906 ms): OffsetCommitResponse_v2(topics=[(topic='tweets_topic', partitions=[(partition=0, error_code=0)])])
+2022-07-21 22:23:28,967 Group my-group-id committed offset OffsetAndMetadata(offset=200, metadata='') for partition TopicPartition(topic='tweets_topic', partition=0)
+2022-07-21 22:23:28,967 Completed autocommit of offsets {TopicPartition(topic='tweets_topic', partition=0): OffsetAndMetadata(offset=200, metadata='')} for group my-group-id
+2022-07-21 22:23:29,377 Received correlation id: 21
+2022-07-21 22:23:29,377 Processing response FetchResponse_v4
+2022-07-21 22:23:29,377 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 21 (510.3321075439453 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:29,377 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:29,377 Sending FetchRequest to node 1001
+2022-07-21 22:23:29,377 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:29,377 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 22: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:29,898 Received correlation id: 22
+2022-07-21 22:23:29,898 Processing response FetchResponse_v4
+2022-07-21 22:23:29,899 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 22 (521.385908126831 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:29,899 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:29,899 Sending FetchRequest to node 1001
+2022-07-21 22:23:29,899 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:29,899 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 23: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:30,408 Received correlation id: 23
+2022-07-21 22:23:30,409 Processing response FetchResponse_v4
+2022-07-21 22:23:30,409 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 23 (509.25207138061523 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:30,409 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:30,409 Sending FetchRequest to node 1001
+2022-07-21 22:23:30,409 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:30,409 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 24: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:30,919 Received correlation id: 24
+2022-07-21 22:23:30,920 Processing response FetchResponse_v4
+2022-07-21 22:23:30,920 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 24 (511.33012771606445 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:30,922 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:30,922 Sending FetchRequest to node 1001
+2022-07-21 22:23:30,922 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:30,922 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 25: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:30,956 Heartbeat: my-group-id[3] kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0
+2022-07-21 22:23:30,957 Sending request HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:30,957 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 9: HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:30,972 Received correlation id: 9
+2022-07-21 22:23:30,973 Processing response HeartbeatResponse_v1
+2022-07-21 22:23:30,973 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 9 (15.924215316772461 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2022-07-21 22:23:30,973 Received successful heartbeat response for group my-group-id
+2022-07-21 22:23:31,433 Received correlation id: 25
+2022-07-21 22:23:31,433 Processing response FetchResponse_v4
+2022-07-21 22:23:31,434 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 25 (511.0962390899658 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:31,435 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:31,435 Sending FetchRequest to node 1001
+2022-07-21 22:23:31,435 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:31,436 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 26: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:31,954 Received correlation id: 26
+2022-07-21 22:23:31,954 Processing response FetchResponse_v4
+2022-07-21 22:23:31,955 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 26 (518.9509391784668 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:31,956 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:31,956 Sending FetchRequest to node 1001
+2022-07-21 22:23:31,956 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:31,956 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 27: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:32,472 Received correlation id: 27
+2022-07-21 22:23:32,473 Processing response FetchResponse_v4
+2022-07-21 22:23:32,473 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 27 (516.9200897216797 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:32,475 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:32,475 Sending FetchRequest to node 1001
+2022-07-21 22:23:32,475 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:32,475 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 28: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:32,995 Received correlation id: 28
+2022-07-21 22:23:32,995 Processing response FetchResponse_v4
+2022-07-21 22:23:32,996 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 28 (520.2548503875732 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:32,997 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:32,997 Sending FetchRequest to node 1001
+2022-07-21 22:23:32,997 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:32,997 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 29: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:33,521 Received correlation id: 29
+2022-07-21 22:23:33,522 Processing response FetchResponse_v4
+2022-07-21 22:23:33,523 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 29 (525.4189968109131 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:33,524 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:33,524 Sending FetchRequest to node 1001
+2022-07-21 22:23:33,524 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:33,525 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 30: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:33,948 Sending offset-commit request with {TopicPartition(topic='tweets_topic', partition=0): OffsetAndMetadata(offset=200, metadata='')} for group my-group-id to coordinator-1001
+2022-07-21 22:23:33,949 Sending request OffsetCommitRequest_v2(consumer_group='my-group-id', consumer_group_generation_id=3, consumer_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', retention_time=-1, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, metadata='')])])
+2022-07-21 22:23:33,949 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 10: OffsetCommitRequest_v2(consumer_group='my-group-id', consumer_group_generation_id=3, consumer_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0', retention_time=-1, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, metadata='')])])
+2022-07-21 22:23:33,957 Heartbeat: my-group-id[3] kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0
+2022-07-21 22:23:33,957 Sending request HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:33,958 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 11: HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:33,974 Received correlation id: 10
+2022-07-21 22:23:33,975 Processing response OffsetCommitResponse_v2
+2022-07-21 22:23:33,975 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 10 (25.91395378112793 ms): OffsetCommitResponse_v2(topics=[(topic='tweets_topic', partitions=[(partition=0, error_code=0)])])
+2022-07-21 22:23:33,975 Group my-group-id committed offset OffsetAndMetadata(offset=200, metadata='') for partition TopicPartition(topic='tweets_topic', partition=0)
+2022-07-21 22:23:33,975 Completed autocommit of offsets {TopicPartition(topic='tweets_topic', partition=0): OffsetAndMetadata(offset=200, metadata='')} for group my-group-id
+2022-07-21 22:23:33,976 Received correlation id: 11
+2022-07-21 22:23:33,976 Processing response HeartbeatResponse_v1
+2022-07-21 22:23:33,976 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 11 (18.86606216430664 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2022-07-21 22:23:33,977 Received successful heartbeat response for group my-group-id
+2022-07-21 22:23:34,041 Received correlation id: 30
+2022-07-21 22:23:34,041 Processing response FetchResponse_v4
+2022-07-21 22:23:34,041 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 30 (516.1459445953369 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:34,041 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:34,041 Sending FetchRequest to node 1001
+2022-07-21 22:23:34,041 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:34,041 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 31: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:34,561 Received correlation id: 31
+2022-07-21 22:23:34,562 Processing response FetchResponse_v4
+2022-07-21 22:23:34,562 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 31 (520.6499099731445 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:34,563 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:34,563 Sending FetchRequest to node 1001
+2022-07-21 22:23:34,564 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:34,564 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 32: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:35,077 Received correlation id: 32
+2022-07-21 22:23:35,077 Processing response FetchResponse_v4
+2022-07-21 22:23:35,078 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 32 (513.5049819946289 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:35,078 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:35,078 Sending FetchRequest to node 1001
+2022-07-21 22:23:35,078 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:35,078 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 33: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:35,593 Received correlation id: 33
+2022-07-21 22:23:35,593 Processing response FetchResponse_v4
+2022-07-21 22:23:35,594 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 33 (515.1689052581787 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:35,595 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:35,595 Sending FetchRequest to node 1001
+2022-07-21 22:23:35,595 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:35,596 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 34: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:36,109 Received correlation id: 34
+2022-07-21 22:23:36,112 Processing response FetchResponse_v4
+2022-07-21 22:23:36,112 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 34 (516.3278579711914 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:36,114 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:36,114 Sending FetchRequest to node 1001
+2022-07-21 22:23:36,114 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:36,114 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 35: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:36,630 Received correlation id: 35
+2022-07-21 22:23:36,631 Processing response FetchResponse_v4
+2022-07-21 22:23:36,631 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 35 (516.646146774292 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:36,632 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:36,632 Sending FetchRequest to node 1001
+2022-07-21 22:23:36,632 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:36,633 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 36: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:36,960 Heartbeat: my-group-id[3] kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0
+2022-07-21 22:23:36,961 Sending request HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:36,961 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 12: HeartbeatRequest_v1(group='my-group-id', generation_id=3, member_id='kafka-python-2.0.2-36b8a87b-5627-4e86-bc38-29a55e6357e0')
+2022-07-21 22:23:36,970 Received correlation id: 12
+2022-07-21 22:23:36,970 Processing response HeartbeatResponse_v1
+2022-07-21 22:23:36,970 <BrokerConnection node_id=coordinator-1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 12 (8.73708724975586 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2022-07-21 22:23:36,970 Received successful heartbeat response for group my-group-id
+2022-07-21 22:23:37,150 Received correlation id: 36
+2022-07-21 22:23:37,152 Processing response FetchResponse_v4
+2022-07-21 22:23:37,152 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 36 (519.4840431213379 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:37,154 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:37,154 Sending FetchRequest to node 1001
+2022-07-21 22:23:37,154 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:37,154 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 37: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:37,671 Received correlation id: 37
+2022-07-21 22:23:37,672 Processing response FetchResponse_v4
+2022-07-21 22:23:37,672 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Response 37 (517.8899765014648 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='tweets_topic', partitions=[(partition=0, error_code=0, highwater_offset=200, last_stable_offset=200, aborted_transactions=NULL, message_set=b'')])])
+2022-07-21 22:23:37,673 Adding fetch request for partition TopicPartition(topic='tweets_topic', partition=0) at offset 200
+2022-07-21 22:23:37,673 Sending FetchRequest to node 1001
+2022-07-21 22:23:37,674 Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
+2022-07-21 22:23:37,674 <BrokerConnection node_id=1001 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]> Request 38: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='tweets_topic', partitions=[(partition=0, offset=200, max_bytes=1048576)])])
