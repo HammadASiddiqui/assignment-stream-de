@@ -33,10 +33,12 @@ For this approach the following components are required:
 4. Producer (Python program)
 5. Consumer (Python program)
 
- - Firstly the docker spawns the containers for the zookeeper, Kafka and postgres DB (also creating the data tables required for the ETL). 
- - Then when the producer script gets executed it invokes the twitter API and pushes the data to the Kafka topic 'tweets_topic' for consumer to consume the API data. 
- - Then the consumer extracts the event data from kafka topic and after transforming the data ingests the relevant detials in the PostgresDB's Tables. 
- - This completes the ETL.
+### Explanation
+1. Firstly the docker spawns the containers for the zookeeper, Kafka and postgres DB (also creating the data tables required for the ETL). 
+2. Then when the producer script gets executed it invokes the twitter API and pushes the data to the Kafka topic 'tweets_topic' for consumer to consume the API data. 
+3. Then the consumer extracts the event data from kafka topic and after transforming the data ingests the relevant detials in the PostgresDB's Tables. 
+4. This completes the ETL.
 
 Please find attached the design diagram for the solution.
+
 ![stream_de](https://user-images.githubusercontent.com/15999137/180238986-802bd022-2c64-4f74-b7fc-50e22b86c0e7.jpeg)
